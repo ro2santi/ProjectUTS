@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang di Kafe"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Manajer/Kasir dan Pembeli"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/et_input_utama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="manajer/kasir/No.Meja (Pembeli: 05)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_input_kedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="123/456/Nama (Pembeli: Joko)"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Petunjuk: Isi Usernama dan Password dengan benar."
+        android:textSize="12sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/darker_gray"/>
+</LinearLayout>

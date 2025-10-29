@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail dan Konfirmasi Pesanan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_detail_pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Item: X | Total Harga: Rp Y"
+        android:layout_marginBottom="12dp"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/et_nama_pembeli_konfirmasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Pembeli"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Metode Pembayaran:"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/rg_metode_pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rb_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rb_e_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Wallet (QRIS)"/>
+    </RadioGroup>
+
+</LinearLayout>
